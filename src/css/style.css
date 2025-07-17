@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Smooch Sans", sans-serif;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.num-box,
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25rem;
+}
+
+.num-box p {
+  padding: 0.5rem;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  background-color: #dcdcdc;
+  color: #1a1a1a;
+}
+
+.num-box .active {
+  background-color: #9f3ae7;
+  color: #fff;
+}
+
+.content-box {
+  margin: 2rem 0;
+}
+
+.content-box h1 {
+  text-transform: capitalize;
+}
+
+.btn-box button {
+  background-color: #9f3ae7;
+  color: #fff;
+  padding: 0.6rem 1.75rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 2rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+button:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.toggle-container {
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dispBtn {
+  /* margin-top: 3rem; */
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  padding: 0.5rem 1.75rem;
+  border: 0;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.dispBtn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+  color: #1a1a1a;
+}
+
+@media (max-width: 480px) {
+  .num-box,
+  .btn-box {
+    width: 18rem;
+  }
+
+  .content-box h1 {
+    font-size: 1.75rem;
+  }
+}
