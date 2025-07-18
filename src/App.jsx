@@ -14,6 +14,7 @@ const messages = [
 // const step = 3;
 
 const App = () => {
+  //? Defining State - always at the top of the component
   const [step, setStep] = useState(1);
   const [display, setDispaly] = useState(true);
   return (
@@ -37,7 +38,8 @@ const App = () => {
        <Content step={step} mssg={messages} />
       <Buttons step={step} func={setStep} disp={display} setDisp={setDispaly} /> */}
       <div className="toggle-container">
-        <ToggleUi disp={display} setDisp={setDispaly} />
+        <ToggleUi setDisp={setDispaly} />
+        {/* <ToggleUi disp={display} setDisp={setDispaly} /> */}
       </div>
     </div>
   );
